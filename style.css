@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+}
+
+.intro {
+    display: flex;
+    color: white;
+    padding-left: 50px;
+    padding-top: 80px;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url('https://images.pexels.com/photos/1749057/pexels-photo-1749057.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.typing {
+    margin-left: 10px;
+    position: relative;
+}
+
+.typing::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -5px;
+    width: 1px;
+    height: 8%;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
